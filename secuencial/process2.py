@@ -8,12 +8,12 @@ from tqdm import tqdm
 
 from decorators import profile
 
-VIDEO = "futbol.mp4"
+VIDEO = "input/futbol.mp4"
 SCALE_PERCENT = 50
-PATH_ORIGIN_FRAMES = "video/base"
-BASE_PATH = "video"
+PATH_ORIGIN_FRAMES = "base"
+BASE_PATH = "."
 FRAME_FORMAT = ".jpg"
-ABSOLUTE_PATH = os.path.abspath("video/")
+ABSOLUTE_PATH = os.path.abspath(".")
 
 
 def extract_frames():
