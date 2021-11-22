@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="test6"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\opencv_build\;CMake Files\..\..\opencv_build\opencv\;CMake Files\..\..\opencv_build\opencv\build\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/zinobe/CLionProjects/test6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/zinobe/CLionProjects/test6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/zinobe/CLionProjects/test6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test6">
+				<Option output="/home/zinobe/CLionProjects/test6/cmake-build-debug/test6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zinobe/CLionProjects/test6/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zinobe/opencv_build/opencv/build"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/core/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/flann/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/imgproc/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/intensity_transform/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/ml/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/phase_unwrapping/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/photo/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/plot/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/quality/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/reg/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/surface_matching/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/xphoto/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/dnn/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/dnn_superres/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/features2d/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/freetype/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/fuzzy/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/hfs/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/img_hash/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/line_descriptor/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/saliency/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/text/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/videoio/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/wechat_qrcode/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/barcode/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/calib3d/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/datasets/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/highgui/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/mcc/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/objdetect/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/rapid/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/rgbd/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/shape/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/structured_light/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/ts/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/video/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/videostab/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/xfeatures2d/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/ximgproc/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/xobjdetect/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/aruco/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/bgsegm/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/bioinspired/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/ccalib/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/dnn_objdetect/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/dpm/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/face/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/gapi/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/optflow/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/stitching/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/superres/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/tracking/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/stereo/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 test6"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test6/fast">
+				<Option output="/home/zinobe/CLionProjects/test6/cmake-build-debug/test6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zinobe/CLionProjects/test6/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zinobe/opencv_build/opencv/build"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/core/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/flann/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/imgproc/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/intensity_transform/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/ml/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/phase_unwrapping/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/photo/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/plot/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/quality/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/reg/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/surface_matching/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/xphoto/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/dnn/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/dnn_superres/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/features2d/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/freetype/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/fuzzy/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/hfs/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/img_hash/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/line_descriptor/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/saliency/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/text/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/videoio/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/wechat_qrcode/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/barcode/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/calib3d/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/datasets/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/highgui/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/mcc/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/objdetect/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/rapid/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/rgbd/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/shape/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/structured_light/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/ts/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/video/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/videostab/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/xfeatures2d/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/ximgproc/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/xobjdetect/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/aruco/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/bgsegm/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/bioinspired/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/ccalib/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/dnn_objdetect/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/dpm/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/face/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/gapi/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/optflow/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv/modules/stitching/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/superres/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/tracking/include"/>
+					<Add directory="/home/zinobe/opencv_build/opencv_contrib/modules/stereo/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 test6/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zinobe/CLionProjects/test6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/zinobe/CLionProjects/test6/main.cpp">
+			<Option target="test6"/>
+		</Unit>
+		<Unit filename="/home/zinobe/CLionProjects/test6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/zinobe/CLionProjects/test6/../../opencv_build/opencv/build/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\opencv_build\opencv\build\"/>
+		</Unit>
+		<Unit filename="/home/zinobe/CLionProjects/test6/../../opencv_build/opencv/build/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\opencv_build\opencv\build\"/>
+		</Unit>
+		<Unit filename="/home/zinobe/CLionProjects/test6/../../opencv_build/opencv/build/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\opencv_build\opencv\build\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
