@@ -8,13 +8,12 @@ from tqdm import tqdm
 
 from decorators import profile
 
-VIDEO = "v2.mp4"
+VIDEO = "v4.mp4"
 SCALE_PERCENT = 50
-PATH_ORIGIN_FRAMES = "base"
-BASE_PATH = "."
+PATH_ORIGIN_FRAMES = "video/base"
+BASE_PATH = "video"
 FRAME_FORMAT = ".jpg"
-# ABSOLUTE_PATH = os.path.abspath("/")
-ABSOLUTE_PATH = "out"
+ABSOLUTE_PATH = os.path.abspath("video/")
 OUTPUT_VIDEO = "out2.mp4"
 
 
@@ -52,12 +51,12 @@ def process_frames(frames):
     folder = "scale"
     for frame in tqdm(range(frames)):
         src = cv2.imread(f"{PATH_ORIGIN_FRAMES}/{frame}.jpg", cv2.IMREAD_UNCHANGED)
-        scale_percent = SCALE_PERCENT
-        width = int(src.shape[1] * scale_percent / 100)
-        height = int(src.shape[0] * scale_percent / 100)
-        dsize = (width, height)
+        # scale_percent = SCALE_PERCENT
+        # width = int(src.shape[1] * scale_percent / 100)
+        # height = int(src.shape[0] * scale_percent / 100)
+        # dsize = (width, height)
+        # output = cv2.resize(src, dsize)
         cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
-        output = cv2.resize(src, dsize)
         cv2.imwrite(f"{BASE_PATH}/{folder}/{frame}.jpg", output)
     print("[DONE] RESIZING FRAMES")
 
@@ -67,7 +66,8 @@ def convertToVideo():
     print("==== 4. ===")
     print("[STAR] BUILD VIDEO...")
     framerate_video = "25"
-    os.system(f"cd {ABSOLUTE_PATH}/gray && ffmpeg -framerate {framerate_video} -c:v libx264 -pattern_type glob -i '*{FRAME_FORMAT}' -pix_fmt yuv420p {ABSOLUTE_PATH}/{OUTPUT_VIDEO} -y")
+    os.system(f"cd {ABSOLUTE_PATH}/gray && ffmpeg -framerate {framerate_video} -pattern_type glob -i '*{FRAME_FORMAT}' -pix_fmt yuv420p {ABSOLUTE_PATH}/{OUTPUT_VIDEO} -y")
+
     print("[DONE] BUILD VIDEO")
 
 

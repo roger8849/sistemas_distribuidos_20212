@@ -51,7 +51,7 @@ def scale_frames(frames):
         width = int(src.shape[1] * scale_percent / 100)
         height = int(src.shape[0] * scale_percent / 100)
         dsize = (width, height)
-        output = cv2.resize(src, dsize)
+        output = cv2.resize(src, (300, 200))
         cv2.imwrite(f"{BASE_PATH}/{folder}/{frame}.jpg", output)
     print("[DONE] RESIZING FRAMES")
 
@@ -60,7 +60,7 @@ def transform_grayscale_frame(frames):
     print("[STAR] APPLY FILTER GRAYSCALE TO FRAMES")
     folder = "gray"
     for frame in tqdm(range(frames)):
-        src = cv2.imread(f"{BASE_PATH}/scale/{frame}.jpg", cv2.IMREAD_UNCHANGED)
+        src = cv2.imread(f"{BASE_PATH}/base/{frame}.jpg", cv2.IMREAD_UNCHANGED)
         output = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
         cv2.imwrite(f"{BASE_PATH}/{folder}/{frame}.jpg", output)
     print("[DONE] APPLY FILTER GRAYSCALE TO FRAMES")
@@ -71,7 +71,7 @@ def convertToVideo():
     print("[STAR] BUILD VIDEO...")
     out_video = "out.mp4"
     framerate_video = "25"
-    os.system(f"cd {ABSOLUTE_PATH}/gray && ffmpeg -framerate {framerate_video} -pattern_type glob -i '*{FRAME_FORMAT}' -pix_fmt yuv420p -qp 0 {ABSOLUTE_PATH}/{out_video} -y")
+    os.system(f"cd {ABSOLUTE_PATH}/gray && ffmpeg -framerate {framerate_video} -pattern_type glob -i '*{FRAME_FORMAT}' -pix_fmt yuv420p  {ABSOLUTE_PATH}/{out_video} -y")
     print("[DONE] BUILD VIDEO")
 
 @profile(sort_by='cumulative', lines_to_show=10, strip_dirs=True)
