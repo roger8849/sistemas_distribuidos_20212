@@ -4,3 +4,12 @@
 *.ptx
 *.cubin
 *.fatbin
+
+# Gen source.
+*.prof
+*/out/
+*/base/
+*/gray/
+*/scale/
+*/__pycache__
+*out*
