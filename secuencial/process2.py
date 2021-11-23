@@ -8,6 +8,9 @@ from tqdm import tqdm
 
 from decorators import profile
 
+from timeit import default_timer as timer
+
+
 VIDEO = "input/futbol.mp4"
 SCALE_PERCENT = 50
 PATH_ORIGIN_FRAMES = "base"
@@ -76,11 +79,14 @@ def convertToVideo():
 
 @profile(sort_by='cumulative', lines_to_show=10, strip_dirs=True)
 def init_process():
+    start = timer()
     extract_frames()
     frames = len(numpy_array_frames())
     scale_frames(frames)
     transform_grayscale_frame(frames)
     convertToVideo()
+    end = timer()
+    print(end - start)
 
 if __name__ == '__main__':
     init_process()
